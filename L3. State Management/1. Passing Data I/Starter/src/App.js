@@ -101,6 +101,16 @@ const App = () => {
         <h1 className="App-title">ReactND - Coding Practice</h1>
       </header>
       <h2>Favorite Movies</h2>
+      <ol>
+        {profiles.map((profile) => {
+          const id = profile.id;
+          const movie = movies[profile.favoriteMovieID];
+          const user = users[profile.userID];
+          //console.log(movie);
+          //console.log(user);
+          return <li key={id}>{user.name}'s favorite movie is {movie.name}</li>
+        })}
+      </ol>
     </div>
   );
 };
