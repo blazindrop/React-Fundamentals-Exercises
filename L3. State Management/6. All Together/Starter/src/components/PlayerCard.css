@@ -1,0 +1,12 @@
+.player-card {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px gray;
+    width: 25%;
+    margin: .6em auto;
+    text-align: left;
+}
+
+.player-card p {
+    margin-left: .5em;
+}
